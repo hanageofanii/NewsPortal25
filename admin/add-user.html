@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Portal Website</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 <!--ICONS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!--FONTS (MONTSERRAT)-->
@@ -17,18 +17,19 @@
 <!--====================NAV===================================-->
 
 <body>
-    <nav>
-        <div class="container nav__container">
-<a href="index.html" class="nav__logo">News Portal 25</a>
+  <nav>
+    <div class="container nav__container">
+<a href="/index.html" class="nav__logo">News Portal 25</a>
 <ul class="nav__items">
-<li><a href="blog.html">Blog</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="categories.html">Categories</a></li>
-<li><a href="contact.html">Contact</a></li>
+  <li><a href="/blog.html">Blog</a></li>
+  <li><a href="/about.html">About</a></li>
+  <li><a href="/categories.html">Categories</a></li>
+  <li><a href="/contact.html">Contact</a></li>
+  <li><a href="signin.html">Sign In</a></li>
 <!-- <li><a href="signin.html">Signin</a></li> -->
 <li class="nav__profile">
 <div class="avatar">
-    <img src="./assets/images/avatar1.png">
+<img src="/assets/images/avatar1.jpg">
 </div>
 <ul>
 <li><a href="dashboard.html">Dashboard</a></li>
@@ -43,19 +44,35 @@
 <!--====================END OF NAV===================================-->
 
 
-<section class="form__section">
+<section class="form__section-sign">
 <div class="container form__section-container">
-    <h2>Edit Category</h2>
+    <h2>Add User</h2>
+    <!-- <div class="alert__message error">
+        <p>This is an error message</p>
+    </div> -->
+    <form action="" enctype="multipart/form-data">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Create Password">
+        <input type="text" placeholder="Confirm Password">
+        <select>
+            <option value="0">Author</option>
+            <option value="0">Admin</option>
+        </select>
+        <div class="form__control">
+            <label for="avater">User Avatar</label>
+            <input type="file" id="avatar">
+        </div>
+    <button type="submit" class="btn">Add User</button>
     
-<form action="" enctype="multipart/form-data">
-    <input type="text" placeholder="Title">
-    <textarea rows="4" placeholder="Description"></textarea>
-    
-<button type="submit" class="btn">Update Category</button>
-
-</form>
+    </form>
 </div>
 </section>
+
+<!--====================END OF FORM===================================-->
+
 
 <footer>
   <div class="footer__socials">
@@ -100,11 +117,11 @@
       <article>
     <h4>Permalinks </h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
     </article>
    
@@ -114,6 +131,6 @@
   </div>
 </footer>
 
-<script src="./assets/main.js"> </script>
+<script src="/assets/main.js"> </script>
 </body>
 </html>

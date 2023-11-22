@@ -2,13 +2,13 @@
   --color-primary: #0b0808;
   --color-primary-light: hsla(177, 91%, 69%, 0.18);
   --color-primary-variant: #5854c7;
-  --color-red: #da0f3f;
+  --color-red: #670fda;
   --color-red-light: hsl(346, 87%, 46%, 15%);
   --color-green: #000000;
   --color-green-light: hsl(156, 100%, 38%, 15%);
   --color-gray-900: #515689;
   --color-gray-700: #6697a7;
-  --color-gray-300: rgba(0, 0, 0, 0.3);
+  --color-gray-300: rgba(255, 255, 255, 0.3);
   --color-gray-200: rgba(0, 0, 0, 0.7);
   --color-white: #f2f2fe;
   --color-bg:#3f5f90;
@@ -41,7 +41,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  color: var(--color-gray-200);
+  color: #000000;
+  /* font-weight: bold; */
   overflow-x: hidden;
   background: linear-gradient(to right, #515689, #6697a7, #8ccdc2, #515689);
   font-size: 0.9rem;
@@ -170,7 +171,7 @@ nav button {
 
 .nav__profile ul li:last-child a {
   background: var(--color-red);
-  color: var(--color-bg);
+  color: var(--color-white);
 }
 .nav__items a:active {
   color: black; 
@@ -345,7 +346,7 @@ footer ul a:hover {
   overflow: hidden;
   padding: 0.6rem 1rem;
   border-radius: var(--card-border-radius-2);
-  color: var(--color-gray-300);
+  color: #000000;
 }
 
 .search__bar-container > div {
@@ -363,7 +364,7 @@ footer ul a:hover {
 }
 
 .search__bar input::placeholder {
-  color: var(--color-gray-300);
+  color: #000000;
 }
 
 /* ====================    BUTTON STYLES  ========================= */

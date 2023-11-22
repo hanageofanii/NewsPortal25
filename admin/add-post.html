@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Portal Website</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
 <!--ICONS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!--FONTS (MONTSERRAT)-->
@@ -17,18 +17,19 @@
 <!--====================NAV===================================-->
 
 <body>
-    <nav>
-        <div class="container nav__container">
-<a href="index.html" class="nav__logo">News Portal 25</a>
+  <nav>
+    <div class="container nav__container">
+<a href="/index.html" class="nav__logo">News Portal 25</a>
 <ul class="nav__items">
-<li><a href="blog.html">Blog</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="categories.html">Categories</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="/blog.html">Blog</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/categories.html">Categories</a></li>
+<li><a href="/contact.html">Contact</a></li>
+<li><a href="signin.html">Sign In</a></li>
 <!-- <li><a href="signin.html">Signin</a></li> -->
 <li class="nav__profile">
 <div class="avatar">
-    <img src="./assets/images/avatar1.jpg">
+<img src="/assets/images/avatar1.jpg">
 </div>
 <ul>
 <li><a href="dashboard.html">Dashboard</a></li>
@@ -43,21 +44,42 @@
 <!--====================END OF NAV===================================-->
 
 
-<section class="form__section">
+<section class="form__section-sign">
 <div class="container form__section-container">
-    <h2>Add Category</h2>
+    <h2>Add Post</h2>
     <!-- <div class="alert__message error">
         <p>This is an error message</p>
     </div> -->
 <form action="" enctype="multipart/form-data">
     <input type="text" placeholder="Title">
-    <textarea rows="4" placeholder="Description"></textarea>
+    <select>
+        <option value="1">Art</option>
+        <option value="1">Wild Life</option>
+        <option value="1">Travel</option>
+        <option value="1">Science and Tech</option>
+        <option value="1">Food</option>
+        <option value="1">Music</option>
+
+    </select>
     
-<button type="submit" class="btn">Add Category</button>
+    <textarea rows="10" placeholder="Body"></textarea>
+    <div class="form__control inline">
+        <input type="checkbox" id="is__featured" checked>
+        <label for="is__featured">Featured</label>
+    </div>
+<div class="form__control">
+    <label for="thumbnail">Add Thumbnail</label>
+    <input type="file" id="thumbnail">
+</div>
+
+<button type="submit" class="btn">Add Post</button>
 
 </form>
 </div>
 </section>
+
+<!--====================END OF FORM===================================-->
+
 
 <footer>
   <div class="footer__socials">
@@ -102,11 +124,11 @@
       <article>
     <h4>Permalinks </h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
     </article>
    
@@ -116,6 +138,6 @@
   </div>
 </footer>
 
-<script src="./assets/main.js"> </script>
+<script src="/assets/main.js"> </script>
 </body>
 </html>

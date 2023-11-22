@@ -45,3 +45,46 @@ popularLink.addEventListener('click', function(event) {
   window.location.href = 'popular.html';
 });
 
+//Login//
+function login() {
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  if (username === 'your_username' && password === 'your_password') {
+      sessionStorage.setItem('loggedIn', 'true');
+
+      window.location.href = 'dashboard.html';
+  } else {
+      alert('Invalid username or password');
+  }
+}
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+  login();
+});
+
+//sign up//
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const firstName = document.getElementById('firstName').value;
+  const lastName = document.getElementById('lastName').value;
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('confirmPassword').value;
+
+  const isUserRegistered = checkUserRegistration(username, email);
+
+  if (isUserRegistered) {
+      alert('User already registered. Please sign in.');
+  } else {
+      alert('Registration successful!');
+
+      document.getElementById('signupForm').reset();
+  }
+});
+
+function checkUserRegistration(username, email) {
+  return false; }
