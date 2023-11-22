@@ -39,11 +39,11 @@ function logout() {
 
 
 /*footer*/
-const popularLink = document.getElementById('popularLink');
-popularLink.addEventListener('click', function(event) {
-  event.preventDefault();
-  window.location.href = '../popular.html';
-});
+// const popularLink = document.getElementById('popularLink');
+// popularLink.addEventListener('click', function(event) {
+//   event.preventDefault();
+//   window.location.href = '../popular.html';
+// });
 
 //Login//
 function login() {
