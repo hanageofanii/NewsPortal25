@@ -42,7 +42,7 @@ function logout() {
 const popularLink = document.getElementById('popularLink');
 popularLink.addEventListener('click', function(event) {
   event.preventDefault();
-  window.location.href = 'popular.html';
+  window.location.href = '../popular.html';
 });
 
 //Login//
